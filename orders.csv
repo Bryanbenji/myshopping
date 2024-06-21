@@ -1,11 +1,2 @@
 ID,PRODUCT_ID,PRODUCT_IMAGE,QUANTITY,CUSTOMER_DATA
-1,1,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1.png,10,"John Doe, johndoe@example.com"
-2,2,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/2.png,2,sd
-3,1,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1.png,10,"John Doe, johndoe@example.com"
-4,15,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/15.png,4,Bryan
-5,15,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/15.png,1,2
-6,20,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/20.png,1,Pedro
-7,20,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/20.png,1,Kevin
-8,19,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/19.png,1,2
-9,17,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/17.png,1,Ricardo
-10,17,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/17.png,1,Ricardo
+13,20,https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/20.png,2,"Kevin Fernandez, kevin@hotmail.com"
