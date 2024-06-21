@@ -13,6 +13,15 @@ const getAllOrders = (callback) => {
   });
 };
 
+const getOrderById = (orderId, callback) => {
+    const query = 'SELECT * FROM orders WHERE id = ?';
+    db.query(query, [orderId], (err, results) => {
+      if (err) return callback(err);
+      if (results.length === 0) return callback(new Error('Order not found'));
+      callback(null, results[0]);
+    });
+  };
+
 const createOrder = (order, callback) => {
   const query = 'INSERT INTO orders (product_id, product_image, quantity, customer_data) VALUES (?, ?, ?, ?)';
   const values = [order.product_id, order.product_image, order.quantity, order.customer_data];
@@ -25,4 +34,5 @@ const createOrder = (order, callback) => {
 module.exports = {
   getAllOrders,
   createOrder,
+  getOrderById
 };

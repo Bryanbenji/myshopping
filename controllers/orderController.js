@@ -77,6 +77,18 @@ const getAllOrders = (req, res) => {
   });
 };
 
+const getOrderById = (req, res) => {
+    const { orderId } = req.params;
+    orderModel.getOrderById(orderId, (err, order) => {
+      if (err) {
+        console.error('Error fetching order:', err);
+        return res.status(500).json({ error: err.message });
+      }
+      res.status(200).json(order);
+    });
+  };
+  
+
 const sendCSVToInventory = async (req, res) => {
   try {
     const csvData = await readCSV();
@@ -95,5 +107,6 @@ const sendCSVToInventory = async (req, res) => {
 module.exports = {
   createOrder,
   getAllOrders,
-  sendCSVToInventory
+  sendCSVToInventory,
+  getOrderById
 };
